@@ -9,7 +9,7 @@
 
 <script type=’text/javascript’>
 var placeholderDiv = document.getElementById(“tableauViz”);
-var url = “https://tableau.aa.com/#/views/RO_Tool_0/ROLiveAssignments?:iid=1“;
+var url = “https://tableau-dev.aa.com/views/RO_Tool-Copy/ROLiveAssignments?iframeSizedToWindow=true&:embed=y&:showAppBanner=false&:display_count=no&:showVizHome=no&:refresh=yes#2“;
 var options = {
 hideTabs: true,
 width: “100%”,
@@ -17,7 +17,7 @@ height: “1000px”
 };
 var viz = new tableauSoftware.Viz(placeholderDiv, url, options);
 
-setInterval(function () {viz.refreshDataAsync() }, 120000);
+setInterval(function () {viz.refreshDataAsync() }, 60000);
 
 </script>
 </body>
